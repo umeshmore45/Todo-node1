@@ -6,7 +6,6 @@ const taskRouter = require("./routes/todoRoutes");
 const app = express();
 
 app.use("/todoList", taskRouter);
-
 app.listen(process.env.PORT, () => {
   console.log(`http://localhost:${process.env.PORT}/`);
 });
